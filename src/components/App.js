@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ResourceList from './ResourceList';
+import UserList from './UserList';
 
 const App = () => {
   //useState('posts') returns an array of two items
@@ -14,6 +15,7 @@ const App = () => {
 
     return (
       <div>
+        <UserList></UserList>
         <div>
             <button onClick={() => setResource('posts')}>Posts</button>
             <button onClick={() => setResource('todos')}>Todos</button>
